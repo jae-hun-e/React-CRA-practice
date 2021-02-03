@@ -1,0 +1,39 @@
+/* selector{
+    property :value;
+} */
+body {
+  background-color: cornflowerblue;
+}
+
+.container {
+  background: coral;
+  height: 50vh;
+  width: 80%;
+  border: solid 4px;
+  margin: 10% auto;
+  position: relative;
+  top: 100px;
+  left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin: 2%;
+  width: 15%;
+  height: 50px;
+  background: blueviolet;
+  display: inline-block;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* relative는 원래 자리에서 오른쪽,아래로 20씩 움직임 */
+/* absolute는  부모요소첫시작부터 위와같이 움직임*/
+/* fixes는 window범위에서 위와같이 움직임 */
+/* sticky는 원래있는 자리에 있으면서 스크롤링 되어도 없어지지 않는다.  */

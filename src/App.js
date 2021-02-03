@@ -1,14 +1,18 @@
 import React from "react";
-import { Button } from "antd";
-import "antd/dist/antd.css";
-import "./App.css";
+import PropTypes from "prop-types";
+import Counter from "Counter";
+import "App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <Button onClick={() => console.log("Hello!")}>Hello, Ant Design.</Button>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Counter />
+        <Counter color="green" />
+        <Counter color="blue" />
+      </div>
+    );
+  }
 }
 
 export default App;
